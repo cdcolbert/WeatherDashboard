@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+.page-header {
+    text-align: center;
+    height: 100px;
+    /* background-image: linear-gradient( 120deg, #020bbd 10%, #000DFF 100%); */
+}
+
+h1 {
+    font-family: 'Stylish', sans-serif;
+    color: black;
+    padding: 21px;
+}
+
+h2, p {
+    font-family: 'Stylish', sans-serif;
+}
+
+h3 {
+    font-family: 'Stylish', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 6px;
+}
+
+h5 {
+    font-family: 'Stylish', sans-serif;
+    padding-top: 17px;
+    margin: 0px;
+}
+
+#content {
+    padding-left: 30px;
+}
