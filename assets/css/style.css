@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+
+h1 {
+    font-family: 'Stylish', sans-serif;
+    color: black;
+    padding: 21px;
+}
+
+h2, p {
+    font-family: 'Stylish', sans-serif;
+}
+
+h3 {
+    font-family: 'Stylish', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 6px;
+}
+
+h5 {
+    font-family: 'Stylish', sans-serif;
+    padding-top: 17px;
+    margin: 0px;
+}
+
+.page-header {
+    text-align: center;
+    height: 100px;
+    background-color: lightskyblue;
+}
+
+.cityButtons {
+    font-family: 'Stylish', sans-serif;
+    text-align: left;
+    height: 40px;
+    margin-bottom: 5px;
+    color: white;
+    background-color: lightskyblue;
+}
+
+#content {
+    padding-left: 30px;
+}
+
+#sidebar {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: lightskyblue;
+    border-radius: 10px;
+}
+
+#cityWeather {
+    border: 1px solid lightgray;
+    height: 340px;
+    margin: 20px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+#uvDiv {
+    display: none;
+}
+
+#uvIndex {
+    width: 56px;
+    border-radius: 6px;
+    padding-left: 8px;
+}
+
+#forecast {
+    margin: 0px;
+    color: white;
+}
+
+#day1, #day2, #day3, #day4, #day5 {
+    margin: 10px 20px 10px 0px;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    height: 220px;
+    float: left;
+    box-shadow: 5px 5px 10px 0px gray;
+}
+
+#cityButton {
+    margin-top: 20px;
+}
+
+#searchButton {
+    background-color: lightskyblue;
+}
+
+@media (max-width: 450px) {
+    .page-header {
+        height: 130px;
+    }
+    #sidebar {
+        width: 340px;
+    }
+    .form-control {
+        width: 80%;
+    }
+    .container {
+        width: 80%;
+    }
+    #cityInfo {
+        height: 390px;
+    }
+}
