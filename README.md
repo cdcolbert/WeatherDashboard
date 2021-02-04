@@ -14,18 +14,41 @@ This project is an application that takes the user's input about a locatoin and 
 
 ## Code Examples
 Examples of usage:
-`
+`$("#searchBtn").on("click", function () {
 
-  `
+        var searchInput = $("#search").val();
+        var newBtn = $(`<button type="button" class="btn btn-primary cityButtons" id=${searchInput}></button>`);
+
+        newBtn.text(searchInput);
+        newBtn.appendTo(cityBtns);
+
+        var cities = [];
+        var oldCities = JSON.parse(localStorage.getItem("Cities"));
+
+        console.log(cities);
+
+        cities.push(searchInput);
+        localStorage.setItem("Cities", JSON.stringify([...oldCities, ...cities]));
+
+        city = $("#search").val();
+        generateInfo();
+
+    });
+
+    $(document).on("click", ".cityButtons", function (e) {
+        city = $(this).text();
+        generateInfo();
+    }); `
 
 ## Features
 List of features ready and TODOs for future development
-* 
-* 
+* Landing page
+* Styling
 
 TODO:
-* 
-* 
+* Fetch weather information
+* Display weather information
+* Display 5 day forecast
 
 ## Status
 Release 1.0
